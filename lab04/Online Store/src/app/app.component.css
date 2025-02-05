@@ -1,0 +1,119 @@
+
+.header{
+    height: 60px;
+    width: 100%;
+    background-color:
+    gainsboro;
+}
+.products-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 600px;
+    width: 80%;
+    margin-top: 60px;
+    margin-left: 11%;
+}
+
+.link-container {
+    display: block;
+    position: relative;
+    width: 220px;
+    height: auto; 
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 8px 0 8px;
+}
+
+
+.img-container{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 10px 45px 15px 45px;
+    height: 170px;
+    width: 100px;
+    width: auto;
+}
+.img-container img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.101);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.dialog-button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dialog-button:hover {
+    background-color: #45a049;
+}
+
+.share-button {
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.share-button:hover {
+    background-color: #007bb5;
+}
+
+.prev{
+    border: 0px;
+    background-color: white;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    left: 15px;
+    cursor: pointer;
+}
+.next{
+    border: 0px;
+    background-color: white;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 75px;
+    right: 15px;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
