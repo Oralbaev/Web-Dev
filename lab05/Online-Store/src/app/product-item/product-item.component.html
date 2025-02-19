@@ -1,0 +1,14 @@
+<div class="product-item">
+    <div class="img-container">
+        <a [href]="productInfo.link"><img [src]="productInfo.images" alt="{{productInfo.name}}"></a>
+    </div>
+    <a [href]="productInfo.link"><h4>{{productInfo.name}}</h4></a>
+    <a [href]="productInfo.link"><p>Рейтинг: {{productInfo.rating}} ⭐</p><br></a>
+    <div class="like">
+        <a (click)="liked()"><i [ngClass]="isLiked ? 'fa fa-heart-o' : 'fa fa-heart'" aria-hidden="true"></i></a>
+        {{LikeCount}}
+    </div>
+    <div class="remove">
+        <a (click)="removeItem()"><i class="fa fa-times" aria-hidden="true"></i></a>
+    </div>
+</div>

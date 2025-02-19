@@ -1,0 +1,9 @@
+<div class="products-list">
+    <ng-container *ngFor="let product of ListOfProducts">
+        <ng-container *ngIf="product.category === selectedCategory">
+            <div class="products-items">
+                <app-product-item [productInfo]="product" (remove)="onTaskItemRemoved($event)"></app-product-item>
+            </div>
+        </ng-container>
+    </ng-container>
+</div>

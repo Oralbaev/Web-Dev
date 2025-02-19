@@ -1,0 +1,12 @@
+<div class="header">
+Online Store
+</div>
+
+<div class="main-page">
+  <div class="categories-container">
+    <a *ngFor="let ctg of categoryList" (click)="selectCategory(ctg)">{{ ctg }}</a>
+  </div>
+  <div class="products-container">
+    <app-product-list [selectedCategory] = "selectedCategory"></app-product-list>
+  </div>
+</div>
