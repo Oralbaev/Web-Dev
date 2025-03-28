@@ -1,0 +1,13 @@
+.albums-container{
+    margin-top: 20px;
+    margin-left: 5%;
+}
+.view-button{
+    background-color: rgb(221, 221, 221);
+    border: 1px solid black;
+}
+.return-button{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 20px;
+}

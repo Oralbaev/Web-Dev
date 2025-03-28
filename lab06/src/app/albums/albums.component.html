@@ -1,0 +1,6 @@
+<div class="albums-container">
+    <div [routerLink]="['/albums', x.id]" class="albums" *ngFor="let x of albumList">
+        <a [routerLink]="['/albums', x.id]">{{x.id}} - {{x.title}}</a>
+        <button (click)="deleteAlbum(x.id); $event.stopPropagation();">X</button>
+    </div>
+</div>

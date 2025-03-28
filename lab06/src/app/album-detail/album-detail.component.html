@@ -1,0 +1,12 @@
+<button [routerLink]="['/albums']" class="return-button">←</button>
+
+<div class="albums-container">
+    {{album.id}} - {{album.title}} <br><br>
+    <label>Название альбома:</label>
+    <input [(ngModel)]="newTitle" placeholder="Введите новое название">
+
+    <button (click)="saveTitle()" class="save-button">Сохранить</button><br>
+    information about the selected item <br><br>
+    <a [routerLink]="['/albums', album.id, 'photos']" class="view-button">View Photos</a>
+    
+</div>
